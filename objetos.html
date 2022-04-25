@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label>Nombre</label><input id="txtNombre" type="text"><br />
+    <label>Apellido</label><input id="txtApellido" type="text"><br />
+    <label>Teléfono</label><input id="txtTelefono" type="text"><br />
+    <label>Email</label><input id="txtEmail" type="text"><br />
+    <button>Agregar</button><br /><br />
+
+    <div id="listado">
+
+    </div>
+
+    <script>
+    var persona = {
+        "nombre": "Lucas",
+        "apellido": "Moyano",
+        "telefono": 346121218,
+        "email": "lucas@gmial.com",
+        "direccion": "Avenida siempre viva 123",
+        "empleo": {
+            "nombre": "Programador",
+            "localidad": "España"
+        }
+    }
+    alert(persona.empleo.nombre);
+    persona.telefono = "No tiene";
+    /*console.log(persona);*/
+
+</script>
+
+
+</body>
+</html>
